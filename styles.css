@@ -242,3 +242,10 @@ video {
   color: var(--darkblue);
   border-radius: 30px;
 }
+
+/* Footer */
+footer p {
+  color: var(--backgroundgrey);
+  margin-left: 50px;
+  text-align: center;
+}
