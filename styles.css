@@ -53,10 +53,7 @@ html {
 }
 
 .nav-link:hover {
-  color: var(--darkblue);
-  background-color: var(--pinkpurp);
-  border-radius: 30px;
-  padding: 15px;
+  color: var(--pinkpurp);
 }
 
 /* Main Sections */
@@ -207,7 +204,7 @@ border: none;
 }
 
 video {
-  margin: 50px;
+  width: 80%;
 }
 
 
@@ -244,8 +241,24 @@ video {
 }
 
 /* Footer */
+
 footer p {
   color: var(--backgroundgrey);
-  margin-left: 50px;
   text-align: center;
+}
+
+.foot-container {
+  background-color: var(--navychar);
+  border-radius: 10px;
+  color: var(--backgroundgrey);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+  height: 20dvh;
+  padding: 0 20px;
+}
+
+#footer-img {
+  max-height: 15vh;
 }
