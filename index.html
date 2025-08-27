@@ -8,17 +8,30 @@
   </head>
   <body>
     <header id="header">
-      <div class="head-container">
-        <img id="header-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" />
-        <nav id="nav-bar">
-          <a class="nav-link" href="#section1">About</a>
-          <a class="nav-link" href="#section2">Products</a>
-          <a class="nav-link" href="#section3">Contact Us</a>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <img id="navbar-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" />
+          <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#about-page" >About</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#products-page" >Products</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#contact-page" >Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <section id="section1" class="sec1-container">
+      <section id="about-page" class="sec1-container">
         <div class="top-container">
           <p class="sec1-header">BC's Sweets & Treats <span class="sec1-subtitle">Established 2025</span></p>
           <img src="images/BC_sale.jpeg" alt="bake sale" loading="lazy" class="sec1-img" />
@@ -29,7 +42,7 @@
         </div>
         <a href="#header" id="top1">Top</a>
       </section>
-      <section id="section2" class="sec2-container">
+      <section id="products-page" class="sec2-container">
         <div class="container">
           <img id="section2-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" class="sec2-img" />
           <p class="sec2-header">BC's Sweets & Treats</p>
@@ -44,7 +57,7 @@
         </div>
         <a href="#header" id="top2">Top</a>
       </section>
-      <section id="section3" class="sec3-container">
+      <section id="contact-page" class="sec3-container">
         <div class="contact-container">
           <div class="contact-info">
             <h2>Contact Us:</h2>
@@ -61,10 +74,11 @@
       </section>
       <footer id="footer">
         <div class="foot-container">
-          <img id="header-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" />
+          <img id="navbar-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" />
           <p>&copy; 2025 BC's Sweets and Treats. All rights reserved.</p>
         </div>
-      </header>
+      </footer>
     </main>
+        <script src="app.js"></script>
   </body>
 </html>
