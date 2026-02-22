@@ -2,6 +2,10 @@
 
 A responsive, single-page marketing website for **BC's Sweets & Treats**, showcasing brand story, product offerings, and contact information.
 
+## Live Site
+
+https://bc-sweets.vercel.app/
+
 ## Overview
 
 This project is a static frontend site built with HTML, CSS, and vanilla JavaScript. It includes:
@@ -59,7 +63,11 @@ Then visit: `http://localhost:8000`
 
 ## Deployment
 
-This project can be deployed to any static hosting provider, including:
+This project is currently deployed on **Vercel**:
+
+- https://bc-sweets.vercel.app/
+
+It can also be deployed to other static hosting providers, including:
 
 - GitHub Pages
 - Netlify
