@@ -1,10 +1,9 @@
-# BC's Sweets & Treats
-
-A responsive, single-page marketing website for **BC's Sweets & Treats**, showcasing brand story, product offerings, and contact information.
-
-## Live Site
-
-https://bc-sweets.vercel.app/
+<div align="center">
+	<h1>BC's Sweets & Treats</h1>
+	<p>A responsive, single-page marketing website for <strong>BC's Sweets & Treats</strong>, showcasing brand story, product offerings, and contact information.</p>
+	<p><a href="https://bc-sweets.vercel.app/"><strong>View Live Site</strong></a></p>
+	<img src="screenshots/screenshot.png" alt="BC's Sweets & Treats homepage" width="900" />
+</div>
 
 ## Overview
 
@@ -40,7 +39,7 @@ This project is a static frontend site built with HTML, CSS, and vanilla JavaScr
 ### 1) Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/imhunterblake/BC-Sweets.git
 cd BCs
 ```
 
@@ -56,10 +55,6 @@ python3 -m http.server 8000
 ```
 
 Then visit: `http://localhost:8000`
-
-## Screenshot
-
-![BC's Sweets & Treats homepage](screenshots/screenshot.png)
 
 ## Deployment
 
