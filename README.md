@@ -8,7 +8,7 @@
 	</p>
 	<p>A responsive, single-page marketing website for <strong>BC's Sweets & Treats</strong>, showcasing brand story, product offerings, and contact information.</p>
 	<p><a href="https://bc-sweets.vercel.app/"><strong>View Live Site</strong></a></p>
-	<img src="screenshots/screenshot.png" alt="BC's Sweets & Treats homepage" width="900" />
+	<img src="screenshots/home-screen.png" alt="BC's Sweets & Treats homepage" width="900" />
 </div>
 
 ## Overview
