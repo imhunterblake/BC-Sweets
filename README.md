@@ -53,6 +53,10 @@ python3 -m http.server 8000
 
 Then visit: `http://localhost:8000`
 
+## Screenshot
+
+![BC's Sweets & Treats homepage](screenshots/screenshot.png)
+
 ## Deployment
 
 This project can be deployed to any static hosting provider, including:
@@ -64,7 +68,7 @@ This project can be deployed to any static hosting provider, including:
 ## Content & Assets
 
 - Product and brand media assets are stored in `images/` and `video/`.
-- Add promotional screenshots to `screenshots/` for use in this README.
+- Project screenshot used in this README is stored in `screenshots/screenshot.png`.
 
 ## Roadmap
 
