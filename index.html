@@ -1,91 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BC's Sweets & Treats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header id="header">
-      <nav class="navbar">
-        <div class="navbar-container">
-          <img id="navbar-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" />
-          <div class="navbar-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#hero" class="nav-logo">BC's</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Order</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="mobileClose">&#10005;</button>
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#menu" class="mobile-link">Menu</a></li>
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#contact" class="mobile-link">Order</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <span class="hero-tag">Homemade with love ✦ Oxford, MS</span>
+        <h1>BC's Sweets<br /><em>&amp; Treats</em></h1>
+        <p class="hero-sub">
+          Premium quality baked goods crafted from scratch.<br />Custom orders
+          welcome.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Full Menu</a>
+          <a href="#contact" class="btn btn-outline">Place an Order</a>
+        </div>
+      </div>
+      <div class="hero-badge">Est. 2025</div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-inner">
+        <div class="about-img-wrap">
+          <img
+            src="images/Bake-sale.png"
+            alt="BC's Sweets & Treats bake sale"
+            class="about-img"
+          />
+          <div class="about-img-tag">Made to order</div>
+        </div>
+        <div class="about-text">
+          <span class="section-label">Our Story</span>
+          <h2>Baked from<br /><em>the heart</em></h2>
+          <p>
+            Created by Brady Claire Scoggins in 2025. I enjoy seeing the smile
+            on people's faces as they take their first bite of my sweet treats.
+            This is why I strive to create premium quality baked goods for all
+            to enjoy.
+          </p>
+          <p class="about-tagline">Homemade, with love in every bite.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Homemade</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">Custom</span>
+              <span class="stat-label">Orders Welcome</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2025</span>
+              <span class="stat-label">Established</span>
+            </div>
           </div>
-          <ul class="navbar-menu">
-            <li class="navbar-item">
-              <a class="navbar-link" href="#about-page" >About</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <div class="menu-header">
+        <span class="section-label">What We Make</span>
+        <h2>Our Menu</h2>
+        <p class="menu-sub">
+          All items are made to order. Text to place your order or request
+          something custom.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- CAKES & CUPCAKES -->
+        <div class="menu-card featured">
+          <div class="menu-card-header">
+            <span class="menu-icon">🎂</span>
+            <h3>Cakes &amp; Cupcakes</h3>
+          </div>
+          <ul class="menu-items">
+            <li>
+              <div class="item-info">
+                <span class="item-name">Chocolate Cake</span>
+                <span class="item-desc"
+                  >8in two layer chocolate cake with chocolate frosting</span
+                >
+              </div>
+              <span class="item-price">$32</span>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#products-page" >Products</a>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Carrot Cake</span>
+                <span class="item-desc"
+                  >8in two layer with cream cheese frosting &amp; optional
+                  pecans</span
+                >
+              </div>
+              <span class="item-price">$45</span>
             </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#contact-page" >Contact Us</a>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Lemon Raspberry Cake</span>
+                <span class="item-desc"
+                  >8in two layer vanilla cake with lemon buttercream &amp;
+                  raspberries</span
+                >
+              </div>
+              <span class="item-price">$32</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Red Velvet Cake</span>
+                <span class="item-desc"
+                  >9in by 13in with cream cheese icing</span
+                >
+              </div>
+              <span class="item-price">$35</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Strawberry Shortcake</span>
+                <span class="item-desc"
+                  >8in two layer pound cake with strawberries &amp; whipped
+                  cream frosting</span
+                >
+              </div>
+              <span class="item-price">$40</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Cookie Cake</span>
+                <span class="item-desc"
+                  >9in by 13in or 8in with buttercream icing</span
+                >
+              </div>
+              <span class="item-price">$25</span>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section id="about-page" class="sec1-container">
-        <div class="top-container">
-          <p class="sec1-header">BC's Sweets & Treats <span class="sec1-subtitle">Established 2025</span></p>
-          <div class="img-container">
-            <img src="images/BC_sale.jpeg" alt="bake sale" loading="lazy" class="sec1-img" />
+
+        <!-- CHEESECAKES -->
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-icon">🍰</span>
+            <h3>Cheesecakes</h3>
+          </div>
+          <ul class="menu-items">
+            <li>
+              <div class="item-info">
+                <span class="item-name">Cherry Cheesecake</span>
+              </div>
+              <span class="item-price">$35</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Blackberry Cheesecake</span>
+              </div>
+              <span class="item-price">$35</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Turtle Cheesecake</span>
+              </div>
+              <span class="item-price">$35</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Strawberry Cheesecake</span>
+              </div>
+              <span class="item-price">$32</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Original Cheesecake</span>
+              </div>
+              <span class="item-price">$30</span>
+            </li>
+          </ul>
+          <div class="menu-note">
+            <strong>Icing Flavors:</strong> Chocolate · Vanilla · Cream
+            Cheese<br />
+            <strong>Fruit Add-ins:</strong> Strawberries · Blackberries ·
+            Blueberries · Raspberries · Peaches<br />
+            <em>Natural dye options available</em>
           </div>
         </div>
-        <div class="bottom-container">
-          <div class="text-container">
-            <p class="sec1-text">Created by Brady Claire Scoggins in 2025. I enjoy seeing the smile on people's faces as they take their first bite of my sweet treats. This is why I strive to create premium quality baked goods for all to enjoy.  </p>
+
+        <!-- COBBLERS -->
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-icon">🫐</span>
+            <h3>Cobblers</h3>
           </div>
-          <div class="caption-container">
-            <p class="sec1-img-caption">Premium Quality Baked Goods.<br> Homemade, with love in every bit.</p>
-          </div>
+          <ul class="menu-items">
+            <li>
+              <div class="item-info">
+                <span class="item-name">Peach &amp; Raspberry Cobbler</span>
+              </div>
+              <span class="item-price">$18</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Blackberry Cobbler</span>
+              </div>
+              <span class="item-price">$18</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Peach Cobbler</span>
+              </div>
+              <span class="item-price">$18</span>
+            </li>
+          </ul>
         </div>
-        <a href="#header" id="top1">Top</a>
-      </section>
-      <section id="products-page" class="sec2-container">
-        <div class="container">
-          <img id="section2-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" class="sec2-img" />
-          <p class="sec2-header">BC's Sweets & Treats</p>
-          <p class="sec1-subtitle">Available Individual Products</p>
-          <hr></hr>
-          <ul class="sec2-ul">
-            <li>Cookies ------- $5 per 5 cookies</li>
-            <li>Cakes ------- $4 per slice</li>
-            <li>Cobblers ------ $3 per slice</li>
-          <ul>
-          <p class="sec2-text">Full cakes/cobblers or larger orders of cookies <br> are available upon request. Made to order.</p>
-        </div>
-        <a href="#header" id="top2">Top</a>
-      </section>
-      <section id="contact-page" class="sec3-container">
-        <div class="contact-container">
-          <div class="contact-info">
-            <h2>Contact us for all of your sweet tooth needs!</h2>
-            <p>Call or Text:</p>
-            <p>(662)-934-1329</p>
+
+        <!-- PASTRIES -->
+        <div class="menu-card" id="card-pastries">
+          <div class="menu-card-header">
+            <span class="menu-icon">🥐</span>
+            <h3>Pastries &amp; Cookies</h3>
           </div>
-          <br>
-          <div class="required">
-          <video id="video" width="480" height="280" controls>
-            <source src="video/Cookies_video.mp4" type="video/mp4">
-          </video>
+          <ul class="menu-items">
+            <li>
+              <div class="item-info">
+                <span class="item-name">Cinnamon Rolls</span>
+                <span class="item-desc"
+                  >Singles for $3 · 4 for $8 · 12 for $24</span
+                >
+              </div>
+              <span class="item-price">$24</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Brownies</span>
+                <span class="item-desc"
+                  >9in by 13in full batch or personal pan 10oz for $7</span
+                >
+              </div>
+              <span class="item-price">$25</span>
+            </li>
+            <li>
+              <div class="item-info">
+                <span class="item-name">Cookies</span>
+                <span class="item-desc"
+                  >36 chocolate chip, Butterfingers, or white/milk chocolate
+                  chip</span
+                >
+              </div>
+              <span class="item-price">$18</span>
+            </li>
+          </ul>
         </div>
       </div>
-      <a href="#header" id="top3">Top</a>
-      </section>
-      <footer id="footer">
-        <div class="foot-container">
-          <img id="navbar-img" src="/images/BCs-modified.png" alt="website logo" loading="lazy" />
-          <p>&copy; 2025 BC's Sweets and Treats. All rights reserved.</p>
+
+      <!-- SIZES -->
+      <div class="sizes-banner">
+        <span class="sizes-label">Available Sizes</span>
+        <div class="sizes-list">
+          <span>Round — 4in, 7in, 8in, 9in</span>
+          <span class="divider">✦</span>
+          <span>Sheet Pan — 9 by 13in</span>
+          <span class="divider">✦</span>
+          <span>Mini Personal Pan — 10oz</span>
         </div>
-      </footer>
-    </main>
-        <script src="app.js"></script>
+        <p class="sizes-note">
+          Prices may vary depending on size. Custom sizes available upon
+          request.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="gallery-header">
+        <span class="section-label">Fresh from the Kitchen</span>
+        <h2>Our Creations</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g-tall">
+          <img src="images/Bake-sale.png" alt="BC's Sweets bake sale display" />
+          <div class="gallery-overlay"><span>Bake Sale</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder gp-chocolate">
+            <span
+              ><img
+                src="images/Chocolate-cake.png"
+                alt="Image of Chocolate Cake"
+            /></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder gp-raspberry">
+            <span
+              ><img
+                src="images/Raspberry-Lemon-Cake.png"
+                alt="Image of Lemon Raspberry Cake"
+            /></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder gp-carrot">
+            <span
+              ><img src="images/Carrot-cake.png" alt="Image of Carrot Cake"
+            /></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder gp-cheesecake">
+            <span
+              ><img
+                src="images/Blackberry-cheesecake.png"
+                alt="Image of Blackberry Cheesecake"
+            /></span>
+          </div>
+        </div>
+        <div class="gallery-item" id="gallery-cookie">
+          <div class="gallery-placeholder gp-cookie">
+            <span
+              ><img src="images/Cookie-Cake.png" alt="Image of Cookie Cake"
+            /></span>
+          </div>
+        </div>
+      </div>
+      <p class="gallery-note">
+        Follow along on social media for the latest creations — or text us to
+        see our current selection!
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <span class="section-label">Get in Touch</span>
+          <h2>Ready to order<br /><em>something sweet?</em></h2>
+          <p>
+            All items are made to order. Text or call to place your order, ask
+            about pricing, or request something completely custom. We love
+            hearing your ideas!
+          </p>
+          <div class="contact-card">
+            <div class="contact-method">
+              <span class="contact-icon">📞</span>
+              <div>
+                <span class="contact-method-label">Call or Text</span>
+                <a href="tel:6629341329" class="contact-number"
+                  >(662) 934-1329</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="contact-note">
+            Custom cakes, large orders, and special occasions always welcome!
+          </p>
+        </div>
+        <div class="contact-visual">
+          <div class="cta-box">
+            <h3>Ordering is easy</h3>
+            <ol class="order-steps">
+              <li><span>01</span> Browse the menu and pick your treats</li>
+              <li><span>02</span> Text us your order &amp; preferred date</li>
+              <li><span>03</span> We confirm and get baking!</li>
+              <li><span>04</span> Pick up fresh &amp; enjoy 🎉</li>
+            </ol>
+            <a href="tel:6629341329" class="btn btn-primary btn-full"
+              >Text (662) 934-1329</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img
+            src="images/BCs-modified.png"
+            alt="BC's Sweets & Treats Logo"
+            class="footer-logo"
+            onerror="this.style.display = 'none'"
+          />
+          <span class="footer-name">BC's Sweets &amp; Treats</span>
+        </div>
+        <nav class="footer-links">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Order</a>
+        </nav>
+        <p class="footer-copy">
+          © 2025 BC's Sweets and Treats. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
