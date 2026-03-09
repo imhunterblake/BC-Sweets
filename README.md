@@ -1,36 +1,95 @@
-# BC's Sweets & Treats — Redesigned Website
+# BC's Sweets & Treats
 
-## What Changed
+> Custom bakery website for a local Oxford, Mississippi small business.
 
-- Full visual redesign: warm cream/brown/berry color palette, Playfair Display + DM Sans typography
-- Mobile-first responsive layout (hamburger menu on mobile)
-- Hero section with gradient background, animated badge, scroll indicator
-- About section with side-by-side image + text layout
-- **Full menu rebuilt** from the menu board images — all items, prices, and descriptions included
-- Gallery section with colored placeholder tiles (replace with real photos)
-- Contact section with step-by-step ordering guide
-- Smooth scroll reveal animations throughout
-- **Video removed** as requested
-- Footer with logo, nav links, copyright
+🌐 **Live Site:** [bc-sweets.vercel.app](https://bc-sweets.vercel.app)
 
-## How to Deploy Updates to Vercel
+---
 
-1. Copy these 3 files into your existing repo: `index.html`, `styles.css`, `script.js`
-2. Make sure your `images/` folder stays in place (all existing image paths are preserved)
-3. Push to GitHub — Vercel auto-deploys
+## Overview
 
-## Adding Real Photos to Gallery
+A full redesign of BC's Sweets & Treats' web presence. Built from scratch with a warm editorial aesthetic — cream, brown, and berry tones — that matches the bakery's handcrafted identity. Mobile-first, fully responsive, and optimized for easy customer ordering.
 
-Replace the `.gallery-placeholder` divs in `index.html` with:
+Built by [Scoggins Digital](https://scoggins-digital.vercel.app) — no page builders, no templates. Clean, custom code.
 
-```html
-<img src="images/YOUR_PHOTO.jpg" alt="Description" />
+---
+
+## Tech Stack
+
+| Layer      | Technology                              |
+|------------|-----------------------------------------|
+| Markup     | HTML5 (semantic)                        |
+| Styling    | CSS3 (custom properties, grid, flexbox) |
+| Scripts    | Vanilla JavaScript (ES6+)               |
+| Fonts      | Google Fonts — Playfair Display, DM Sans |
+| Hosting    | Vercel                                  |
+
+---
+
+## Features
+
+- **Mobile-first responsive** — hamburger nav menu on mobile
+- **Scroll reveal animations** — fade-in-up transitions throughout
+- **Full menu section** — all items, prices, and descriptions
+- **Gallery grid** — asymmetric layout with 6 real product photos
+- **Ordering contact section** — step-by-step guide with phone/text links
+- **Warm editorial design** — cream/brown/berry palette, serif + sans-serif typography
+
+---
+
+## Project Structure
+
+```
+bc-sweets/
+├── index.html    # All markup and page structure
+├── styles.css    # All styles, organized by section
+├── script.js     # Mobile menu, scroll reveal, nav highlight
+└── images/       # Site images
+    ├── Bake-sale.png
+    ├── Chocolate-cake.png
+    ├── Raspberry-Lemon-Cake.png
+    ├── Carrot-cake.png
+    ├── Blackberry-cheesecake.png
+    └── Cookie-Cake.png
 ```
 
-Recommended: 800×800px square crops work best for the grid.
+---
 
-## Files
+## Sections
 
-- `index.html` — full page markup
-- `styles.css` — all styling
-- `script.js` — nav scroll, mobile menu, scroll reveal animations
+- **Hero** — full-screen gradient, animated badge, CTA buttons
+- **About** — bakery story, side-by-side layout
+- **Menu** — 5 categories: Cakes & Cupcakes, Cheesecakes, Cobblers, Pastries & Cookies
+- **Gallery** — asymmetric CSS grid with real product photography
+- **Contact** — ordering instructions, phone and text links
+
+---
+
+## Local Development
+
+No build tools or dependencies required:
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/imhunterblake/bc-sweets.git
+   ```
+2. Open in VS Code
+3. Right-click `index.html` → **Open with Live Server**
+
+---
+
+## Client
+
+**BC's Sweets & Treats** — Oxford, Mississippi  
+Phone/Text: (662) 934-1329
+
+---
+
+## Built By
+
+**Hunter Scoggins** — [Scoggins Digital](https://scoggins-digital.vercel.app)  
+GitHub: [github.com/imhunterblake](https://github.com/imhunterblake)
+
+---
+
+© 2025 Scoggins Digital. Built with ♥ in Oxford, Mississippi.
