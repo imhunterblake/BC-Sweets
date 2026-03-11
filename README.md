@@ -1,6 +1,6 @@
 # BC's Sweets & Treats
 
-> Custom bakery website for a local Oxford, Mississippi small business.
+> Custom bakery website for a local Pope, Mississippi small business.
 
 🌐 **Live Site:** [bc-sweets.vercel.app](https://bc-sweets.vercel.app)
 
